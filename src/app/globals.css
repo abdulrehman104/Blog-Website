@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0d0c22;
+  --bgSoft: #2d2b42;
+  --text: white;
+  --textSoft: #e5e5e5;
+  --btn: #3673fd;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Customized Classes */
+
+.activeLink {
+  @apply bg-[var(--text)] text-[var(--bg)] ;
+}
+.input {
+  @apply p-[20px] rounded-md border-none outline-none bg-[var(--bgSoft)] text-[var(--text)] ;
+}
